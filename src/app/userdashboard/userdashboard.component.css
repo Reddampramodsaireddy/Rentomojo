@@ -1,0 +1,25 @@
+.container-fluid{
+  margin: 0px;
+  padding:0px;
+}
+.nav-item{
+  margin-top:25px;
+  margin-left: 10px;
+}
+.navbar-nav{
+  position: absolute;
+  top:30px;
+  left: 40px; 
+  
+}
+nav{
+  height: 599px;
+  
+}
+
+.nav-link{
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bolder;
+}
+

@@ -1,0 +1,29 @@
+.hero-section {
+  background: url('https://c4.wallpaperflare.com/wallpaper/343/838/535/bike-car-ferrari-cars-ferrari-hd-art-wallpaper-preview.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin-left: -25px;
+
+}
+
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+
+.lead{
+  font-weight: 900;
+}
+
+h1{
+  font-size: 100px;
+}

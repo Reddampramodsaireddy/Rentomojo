@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let v of vehicles">     
+    <div class="card mb-4">
+      <div class="card-header text-center">
+        <h3>{{v.id}}</h3>
+        <img [src]="v.imageUrl" class="card-img-top" height="200" alt="">
+        <h3>{{v.name}}</h3>
+      </div>
+
+      <div class="card-body">
+        <p>{{v.description}}</p>
+        <p>Price : {{v.pricePerDay | currency:'INR'}}</p>
+      </div>
+
+      <div class="card-footer text-center">
+        <button class="btn btn-primary me-2" (click)="tempdata(v)" data-bs-toggle="modal" data-bs-target="#updateModal"><i class="fa-solid fa-edit"></i></button>
+        <button class="btn btn-danger" (click)="delete(v.id)"><i class="fa-solid fa-trash"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="temp">
+  <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+    
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="updateModalLabel">Update Vehicle</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+    
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Vehicle Name</label>
+              <input type="text" class="form-control" [(ngModel)]="temp.name" name="name">
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Description</label>
+              <input type="text" class="form-control" [(ngModel)]="temp.description" name="description">
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Price Per Day</label>
+              <input type="number" class="form-control" [(ngModel)]="temp.pricePerDay" name="pricePerDay">
+            </div>
+          </form>
+        </div>
+  
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="update()" data-bs-dismiss="modal">Update</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+</div>

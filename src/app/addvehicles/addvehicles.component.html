@@ -1,0 +1,67 @@
+<div class="container"> 
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+      <h1 class="row d-flex justify-content-center" style="color: rgb(196, 95, 95);">ADD VEHICLE</h1>
+      <form class="example-form" [formGroup]="addVehicleForm" (ngSubmit)="addnow()">
+        
+        <mat-form-field class="example-full-width">
+          <mat-label>Id</mat-label>
+          <input matInput placeholder="enter your id" formControlName="id">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="enter your name" formControlName="name" >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Type</mat-label>
+          <input matInput placeholder="enter type" formControlName="type">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Brand</mat-label>
+          <input matInput placeholder="enter brand" formControlName="brand">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Model</mat-label>
+          <input matInput placeholder="enter model" formControlName="model">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Priceperday</mat-label>
+          <input matInput placeholder="enter price-per-day" formControlName="pricePerDay">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Fuel type</mat-label>
+          <input matInput placeholder="enter fuel type" formControlName="fuelType">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Image</mat-label>
+          <input matInput placeholder="enter image url" formControlName="imageUrl">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>available</mat-label>
+          <input matInput placeholder="enter availability" formControlName="available">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Describe the vehicle" formControlName="description">
+        </mat-form-field>
+
+        <div class="form-group">
+          <button class="btn btn-primary" style="width: 500px; ;">ADD</button>
+        </div>
+      </form>
+      
+
+    </div>
+
+  </div>
+
+</div>

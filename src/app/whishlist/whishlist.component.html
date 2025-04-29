@@ -1,0 +1,33 @@
+
+<div class="container mt-4">
+
+  <!-- Show when wishlist has items -->
+  <div *ngIf="whishlistItems && whishlistItems.length > 0">
+    <h2>YOUR WHISHLIST</h2>
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Image</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of whishlistItems">
+          <td>{{ c.name }}</td>
+          <td><img [src]="c.imageUrl" alt="" height="200px" width="200px"></td>
+          <td>{{ c.description }}</td>
+          <td>{{ c.pricePerDay }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Show when wishlist is empty -->
+  <div *ngIf="whishlistItems?.length === 0" class="text-center">
+    <img src="https://www.taazashahimewa.com/assets/front/images/wishlist-empty1.jpg" alt="No items in wishlist" style=" margin-top: 40px;" >
+ 
+  </div>
+
+</div>

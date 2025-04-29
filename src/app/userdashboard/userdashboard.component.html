@@ -1,0 +1,21 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-2">
+      <nav class="navbar navbar-light bg-success sticky-top">
+        <ul class="navbar-nav ">
+          <h3 style="color: rgb(5, 0, 0);"><i class="fa-solid fa-car"></i>rentomojo</h3><br><br>
+          <li class="nav-items"> <a routerLink="/user/home" class="nav-link">HOME</a></li>
+          <li class="nav-items"> <a routerLink="/user/veiw" class="nav-link">VEIW VEHICLES</a></li>
+          <li class="nav-items"> <a routerLink="/user/orders" class="nav-link">VEIW ORDERS</a></li>
+          <li class="nav-items"> <a routerLink="/user/whishlist" class="nav-link">WHISHLIST</a></li>
+          <li class="nav-items"> <a routerLink="/user/cart" class="nav-link">CART<span class="badge bg-danger">{{len}}</span></a></li>
+          <li class="nav-items"> <a (click)="logOut()" class="nav-link">LOGOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

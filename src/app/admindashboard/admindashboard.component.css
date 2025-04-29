@@ -1,0 +1,26 @@
+.container-fluid{
+  margin: 0px;
+  padding:0px;
+}
+.nav-item{
+  margin-top:25px;
+  margin-left: 10px;
+}
+.navbar-nav{
+  position: absolute;
+  top:20px;
+  left: 30px; ;
+}
+nav{
+  height: 598px;
+  
+}
+
+.nav-link{
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bolder;
+}
+.custom-navbar {
+  background-color: #df6c20; /* your custom color */
+}
